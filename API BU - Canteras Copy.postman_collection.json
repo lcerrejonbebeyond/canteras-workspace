@@ -1,0 +1,862 @@
+{
+	"info": {
+		"_postman_id": "434db547-9833-4b58-9fb6-498c6d30bebb",
+		"name": "API BU - Canteras Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25357878"
+	},
+	"item": [
+		{
+			"name": "Login Contacto BU",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "api_pre@luziaenergia.es",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123456./-",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "e87ee14c-58fd-432f-9450-ce29cfa4a604",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/usuarioWS/login",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"usuarioWS",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Contactos - Mi Familia",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "administradorcanteras@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/contactoWS/obtenerContactos?numElem=10&idCliente=529&idDelegacion=529&numPag=1&contactosDesdeLog=false",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"contactoWS",
+						"obtenerContactos"
+					],
+					"query": [
+						{
+							"key": "numElem",
+							"value": "10"
+						},
+						{
+							"key": "idCliente",
+							"value": "529"
+						},
+						{
+							"key": "idDelegacion",
+							"value": "529"
+						},
+						{
+							"key": "numPag",
+							"value": "1"
+						},
+						{
+							"key": "contactosDesdeLog",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Facturas por cliente - Cargos",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "lmerino@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/facturaWS/cliente/529",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"facturaWS",
+						"cliente",
+						"529"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener tareas - Servicios / Reservas",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "administradorcanteras@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/tareaWS/obtenerTareas?numElem=10&tipoFiltrarPorClienteGestionado=1&numPag=1&filtroTarea=1",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"tareaWS",
+						"obtenerTareas"
+					],
+					"query": [
+						{
+							"key": "numElem",
+							"value": "10"
+						},
+						{
+							"key": "tipoFiltrarPorClienteGestionado",
+							"value": "1"
+						},
+						{
+							"key": "numPag",
+							"value": "1"
+						},
+						{
+							"key": "filtroTarea",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener motivos - Tipo de Servicio / Reserva (estancia o pista)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "lmerino@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/tareaWS/obtenerMotivosTarea?idTipoTarea=34",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"tareaWS",
+						"obtenerMotivosTarea"
+					],
+					"query": [
+						{
+							"key": "idTipoTarea",
+							"value": "34",
+							"description": "34 Reservas, 35 Servicios"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alta tarea - Crea Reserva/Servicio",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "administradorcanteras@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cliente\": {  \n        \"id\": 529\n    },\n    \"gestionadoPor\": {\n        \"id\": 1\n    },\n     \"contacto\": {  \n        \"id\": 760\n    },\n     \"delegacion\": {  \n        \"id\": 529\n    },\n    \"observacion\": \"Observaciones de la tarea\",\n    \"informarCliente\": false,\n    \"fechaHoraInicio\": \"09/05/2025 09:30:00\",\n    \"estadoTarea\": {\n        \"id\": 67,\n        \"motivoTarea\": [{\n                \"id\": 35,\n                \"tipoTarea\": {\n                    \"id\": 34\n                }\n            }\n        ]\n    }\n}"
+				},
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/tareaWS/altaTarea?=",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"tareaWS",
+						"altaTarea"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Estados - No necesario, se manda por detrás",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "administradorcanteras@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/tareaWS/obtenerEstadosTarea?idMotivoTarea=35",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"tareaWS",
+						"obtenerEstadosTarea"
+					],
+					"query": [
+						{
+							"key": "idMotivoTarea",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alta Contacto - Crear familiar",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "administradorcanteras@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"delegaciones\": [\n        {\n            \"cliente\": {\n                \"id\": 529\n            },\n            \"id\": 529\n        }\n    ],\n    \"esEnvio\": false,\n    \"esFiscal\": false,\n    \"esPrincipal\": false,\n    \"sexo\": 0,\n    \"nombre\": \"Fulanito\",\n    \"apellido1\": \"Primero\",\n    \"apellido2\": \"Segundo\",\n   // \"fechaNacimiento\": \"22/07/1998 00:00:00\",\n    \"telefono\": \"676767676\",\n    \"movil\": \"676767676\",\n    \"email\": \"familiar1@canteras.com\",\n    \"cargo\": {\n        \"id\": 3\n    }\n}"
+				},
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/contactoWS/altaContacto",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"contactoWS",
+						"altaContacto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Contacto - Editar familiar",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "administradorcanteras@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 795,\n    \"delegaciones\": [\n        {\n            \"cliente\": {\n                \"id\": 529\n            },\n            \"id\": 529\n        }\n    ],\n    \"esEnvio\": false,\n    \"esFiscal\": false,\n    \"esPrincipal\": false,\n    \"sexo\": 0,\n    \"nombre\": \"Fulanito\",\n    \"apellido1\": \"Primero\",\n    \"apellido2\": \"Segundo\",\n    // \"fechaNacimiento\": \"22/07/1998 00:00:00\",\n    \"telefono\": \"676876765\",\n    \"movil\": \"676876765\",\n    \"email\": \"familiar1@canteras.com\",\n    \"cargo\": {\n        \"id\": 3\n    }\n}"
+				},
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/contactoWS/modificarContacto/529",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"contactoWS",
+						"modificarContacto",
+						"529"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Contacto - Eliminar familiar",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "administradorcanteras@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/contactoWS/eliminarContacto/794/529",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"contactoWS",
+						"eliminarContacto",
+						"794",
+						"529"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar tarea - Baja servicio/reserva",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "administradorcanteras@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 82,\n    \"cliente\": {\n        \"id\": 529\n    },\n    \"gestionadoPor\": {\n        \"id\": 1\n    },\n    \"contacto\": {\n        \"id\": 760\n    },\n    \"delegacion\": {\n        \"id\": 529\n    },\n    \"editableMotivoEstado\": true,\n    \"observacion\": \"Observaciones modificadas\",\n    \"informarCliente\": false,\n    \"fechaHoraInicio\": \"22/07/2025 14:30:00\",\n   // \"fechaHoraFin\": \"01/09/2025 20:19:47\",\n    \"estadoTarea\": {\n        \"id\": 70,\n        \"motivoTarea\": [{\n                \"id\": 75,\n                \"tipoTarea\": {\n                    \"id\": 35\n                }\n            }\n        ]\n    }\n}"
+				},
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/tareaWS/modificarTarea",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"tareaWS",
+						"modificarTarea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Cargos - Etiquetas",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "administradorcanteras@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/clienteWS/obtenerCargos",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"clienteWS",
+						"obtenerCargos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recordar Contraseña",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Canteras@2025",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "administradorcanteras@bebeyond.es",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d0215bc3-70b6-41c6-be60-d8cb7a80dd63",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://corporatepre.beyondup.es/crm_erp/api-rest/usuarioWS/recordarClave?emailUser=lmerino@bebeyond.es",
+					"protocol": "https",
+					"host": [
+						"corporatepre",
+						"beyondup",
+						"es"
+					],
+					"path": [
+						"crm_erp",
+						"api-rest",
+						"usuarioWS",
+						"recordarClave"
+					],
+					"query": [
+						{
+							"key": "emailUser",
+							"value": "lmerino@bebeyond.es"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

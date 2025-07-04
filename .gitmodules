@@ -1,0 +1,9 @@
+[submodule "club-canteras-backend"]
+	path = club-canteras-backend
+	url = https://git-codecommit.eu-west-1.amazonaws.com/v1/repos/club-canteras-backend
+[submodule "club-canteras-frontend"]
+	path = club-canteras-frontend
+	url = https://git-codecommit.eu-west-1.amazonaws.com/v1/repos/club-canteras-frontend
+[submodule "club-canteras-app"]
+	path = club-canteras-app
+	url = https://git-codecommit.eu-west-1.amazonaws.com/v1/repos/club-canteras-app
