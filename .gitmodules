@@ -7,3 +7,15 @@
 [submodule "club-canteras-app"]
 	path = club-canteras-app
 	url = https://git-codecommit.eu-west-1.amazonaws.com/v1/repos/club-canteras-app
+[submodule "front"]
+  path = front
+  url  = git@github.com:lcerrejonbebeyond/canteras-front.git
+
+[submodule "backend"]
+  path = backend
+  url  = git@github.com:lcerrejonbebeyond/canteras-back.git
+
+[submodule "app"]
+  path = app
+  url  = git@github.com:lcerrejonbebeyond/canteras-app.git
+
